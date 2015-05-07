@@ -18,6 +18,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         self.window = UIWindow(frame: UIScreen.mainScreen().bounds)
         // Override point for customization after application launch.
         self.window!.backgroundColor = UIColor.whiteColor()
+        
+        
+        var table_view = TableView(style: UITableViewStyle.Grouped)
+        var nav = UINavigationController(rootViewController: table_view)
+        
+        self.window!.rootViewController = nav
         self.window!.makeKeyAndVisible()
         return true
     }
